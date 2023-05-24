@@ -40,7 +40,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/imageView7" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName"
+                android:id="@+id/inicio_email"
                 android:layout_width="0dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="32dp"
@@ -59,7 +59,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName2"
+                android:id="@+id/inicio_pass"
                 android:layout_width="0dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="32dp"
@@ -79,25 +79,26 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView" />
 
             <ImageView
-                android:id="@+id/imageView"
+                android:id="@+id/inicio_next"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="32dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
+                app:layout_constraintTop_toBottomOf="@+id/inicio_pass"
                 app:srcCompat="@drawable/btn_arraw1" />
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/inicio_newuser"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
                 android:text="Eres nuevo? Regístrate"
                 android:textColor="#199b53"
-                android:textStyle="bold"
                 android:textSize="16sp"
-                android:layout_marginTop="16dp"
+                android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+                app:layout_constraintHorizontal_bias="0.497"
                 app:layout_constraintStart_toStartOf="@+id/linearLayout"
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
@@ -111,7 +112,7 @@
                 android:orientation="horizontal"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView">
+                app:layout_constraintTop_toBottomOf="@+id/inicio_next">
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/button2"
@@ -142,16 +143,6 @@
                     android:textSize="16dp"
                     android:textStyle="bold" />
             </LinearLayout>
-
-            <Button
-                android:id="@+id/btn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="144dp"
-                android:layout_marginTop="32dp"
-                android:text="Button"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

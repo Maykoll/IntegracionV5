@@ -9,6 +9,7 @@ import androidx.viewpager2.adapter.FragmentStateAdapter;
 import androidx.viewpager2.widget.ViewPager2;
 
 import android.app.ActionBar;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -37,8 +38,6 @@ public class Formulario extends AppCompatActivity {
         });
 
 
-
-
         //para seleccionar el fragment clickando en la pestaña
         tablayout1.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
@@ -56,10 +55,17 @@ public class Formulario extends AppCompatActivity {
             }
         });
 
-
-
     }
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+            // Vuelve a la clase de inicio (Activity Main)
+            Intent intent = new Intent(this, MainActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent);
+            finish();
+    }
 
     static class AdaptadorFragment extends FragmentStateAdapter {
 
